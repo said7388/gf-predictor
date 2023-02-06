@@ -44,7 +44,7 @@ const Prediction = () => {
 
   return (
     <>
-      <div className='bg-gray-100 rounded p-5 flex'>
+      <div className='rounded p-5 flex flex-col md:flex-row gap-y-8 '>
         <PredictionInputs handleOnChange={handleOnChange} onSubmit={onSubmit} />
         <PredictionOutput predictions={predictions} />
       </div>

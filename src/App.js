@@ -6,11 +6,11 @@ import Prediction from "./components/prediction";
 
 function App() {
   return (
-    <>
+    <div className="bg-gray-100 min-h-screen ">
       <Header />
       <Prediction />
       <ToastContainer autoClose={2000} theme='colored' />
-    </>
+    </div>
   );
 }
 
