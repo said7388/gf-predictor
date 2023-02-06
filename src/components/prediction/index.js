@@ -18,8 +18,9 @@ const Prediction = () => {
   }
 
   const postPrediction = (payload) => {
+    const url = `${process.env.REACT_APP_BASE_URL}/`
     axios
-      .post('url', payload)
+      .post(url, payload)
       .then((response) => console.log(response))
       .catch((error) => console.log(error.message))
     // .finally(() => );
